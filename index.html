@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ma page restovoyage</title>
+
+    <!------------lien pour les font family------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-----------------lien pour les icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-------------lien pour le bootstrap------------>
+    <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.css">
+    <!------------lien pour le style.css------------->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg nav mb-5">
+        <div class="container-fluid">
+
+            <div class="nav-brand d-flex align-items-center">
+                <a class="logo" href="#">
+                    <img src="./image/logo3.png" class="img-fluid" width="100" alt="logo">
+                </a>
+                <ul class="list">
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-outline-dark btn-sm dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="fa fa-bars"></span> Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#nos plats">Nos plats</a></li>
+                            <li><a class="dropdown-item" href="#dessert">Nos dessert</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#chef cuisinié">Nos cuisinié</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <button class=" btn btn-outline-dark navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="voyage.html">Voyages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apropos">A propos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Nos services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Plats Africain</a></li>
+                            <li><a class="dropdown-item" href="#">Plats Europeen</a></li>
+                            <li><a class="dropdown-item" href="#variété">Tout variété</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Recherche</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!---------section hero--------------->
+    <section class="hero mb-5">
+        <div class="over-lay">
+            <div class="hero-text mx- px-">
+                <h1>AMBIANCE CULUTUREL...</h1>
+                <h2>Bienvenu dans ce monde de plats esquis</h2>
+                <a href="#about" class="btn btn-warning">En savoir plus </a>
+            </div>
+        </div>
+    </section>
+    <!------------section aprés baniere---------------->
+    <section class="container" id="apropos">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="texte">
+                    <h1 class="fw-bold taille mb-4"><span class="texte-orange">Ambiance Culturel</span> la joie
+                        Familliale</h1>
+                    <p class="text-secondary h5 mb-4">Mesdames et Messieurs,
+
+                        Aujourd'hui, nous nous réunissons pour explorer la richesse et la diversité des ambiances
+                        culturelles liées à la nourriture, tant africaine qu'européenne.
+                        La cuisine africaine se distingue par sa variété, influencée par de multiples cultures et
+                        traditions. Les ingrédients de base, tels que le maïs, le millet et les légumineuses, sont
+                        souvent au cœur des plats emblématiques comme le Jollof Rice ou le Tagine. Ces mets sont non
+                        seulement des sources de nutrition, mais ils favorisent également un esprit communautaire,
+                        rendant chaque repas une occasion de partage et de convivialité.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="./image/imge1.jpg " class="img-fluid rounded-4 shadow-lg shadow-sm" alt="images">
+            </div>
+        </div>
+    </section>
+    <!------------la barre d'info-------------->
+    <section class="mb-5">
+        <div class=" icones">
+            <div class="row d-flex mx-5 px-5 text-align align-items-center ">
+                <div class="col-md-4">
+                    <div class="text">
+                        <i class="fa fa-truck fs-2 icone mb-2"></i>
+                        <h4>Livraison grantuit</h4>
+                        <p class="text-secondary">Lorsque la commande est superieure a 5000f</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text">
+                        <i class="fa fa-phone-volume fs-2 icone mb-2"></i>
+                        <h4>Assitance 24h/24 et 7j/7</h4>
+                        <p class="text-secondary ">Béneficiez d'un soutien tout la journée</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text">
+                        <i class="fa fa-arrows-rotate fs-2 icone mb-2"></i>
+                        <h3>Remboursement</h3>
+                        <p class="text-secondary ">Obtenez un remboursement dans les 3 jours!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------section le texte avant la barre tabs-------------->
+    <section id="nos plats">
+        <div class="mx-5 px-5 mb-5 ">
+            <h2 class="fw-bold fs-1 mb-5"><span class="texte-orange">Chez nous c'est la variété des plat</span> </h2>
+            <p class=" text-secondary fs-4 ">L'expérience culinaire africaine et européenne est riche et diversifiée,
+                offrant une multitude de saveurs et de traditions. Que ce soit à travers des repas communautaires en
+                Afrique ou des dîners raffinés en Europe, la nourriture reste un élément essentiel de la culture et de
+                l'identité.</p>
+        </div>
+    </section>
+
+    <!-----------menu des diferents plats------------->
+    <section class="mb-5">
+        <div class="container">
+            <!--Tabulation pour filtrer nos plats c'est à dire n'afficher le service que si on clique sur le menu approprier -->
+            <div class="mb-4">
+                <ul class="nav nav-underline bg-secondary rounded-2 text-center py-3 text-white">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-white active" aria-current="page" href="#" data-bs-toggle="tab"
+                            data-bs-target="#nav-varieté" type="button" role="tab" aria-controls="nav-varieté"
+                            aria-selected="true">variété</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#" data-bs-toggle="tab"
+                            data-bs-target="#nav-afrique" type="button" role="tab" aria-controls="nav-afrique"
+                            aria-selected="true">Afrique</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link text-white" aria-current="page" href="#" data-bs-toggle="tab"
+                        data-bs-target="#nav-europe" type="button" role="tab" aria-controls="nav-europe"
+                        aria-selected="true">Europe</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Pour afficher les services après cliques sur les menu -->
+            <div class="tab-content" id="myTabContent pt-3">
+
+                <!--Ligne de chaque services groupé -->
+
+                <!--Services variété-------- -->
+                <div class="tab-pane fade show active" id="nav-varieté" role="tabpanel" aria-labelledby="nav-varieté"
+                    tabindex="0" id="variété">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./image/img2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span
+                                            class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                        <span class="fa-regular fa-heart"></span>
+                                    </div>
+
+                                    <h5 class="card-title"> Assortiment idéal pour 2 personnes</h5>
+                                    <p class="card-text text-secondary">Si vous avez envie de goûter un assortiment qui
+                                        représente bien la cuisine libanaise et syrienne fait...</p>
+                                    <p>
+                                        <span class="text-warning">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span class="text-warning">5.0</span>
+                                        <span>(16,500)</span>
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">$700</p>
+                                    <a href="">
+                                        <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-------repas 2------------>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./image/img6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span
+                                            class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                        <span class="fa-regular fa-heart"></span>
+                                    </div>
+
+                                    <h5 class="card-title">Caviar d'aubergine</h5>
+                                    <p class="card-text text-secondary">La salade traditionnelle avec du fromage et pain
+                                        frit. Fait MaisonIngrédients : Salade,..</p>
+
+                                    <p>
+                                        <span class="text-warning">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span class="text-warning">5.0</span>
+                                        <span>(16,500)</span>
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">$700</p>
+                                    <a href="">
+                                        <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./image/img5.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span
+                                            class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                        <span class="fa-regular fa-heart"></span>
+                                    </div>
+
+                                    <h5 class="card-title">Fattouche</h5>
+                                    <p class="card-text text-secondary ">This is a wider card with supporting text below
+                                        as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+
+                                    <p>
+                                        <span class="text-warning">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span class="text-warning">5.0</span>
+                                        <span>(16,500)</span>
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">$700</p>
+                                    <a href="">
+                                        <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------deuxiéme rang------------------>
+                <div class="tab-pane fade show active" id="nav-varieté" role="tabpanel" aria-labelledby="nav-varieté"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./image/imge.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span
+                                            class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                        <span class="fa-regular fa-heart"></span>
+                                    </div>
+
+                                    <h5 class="card-title"> Assortiment idéal pour 2 personnes</h5>
+                                    <p class="card-text text-secondary">Si vous avez envie de goûter un assortiment qui
+                                        représente bien la cuisine libanaise et syrienne fait...</p>
+                                    <p>
+                                        <span class="text-warning">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span class="text-warning">5.0</span>
+                                        <span>(16,500)</span>
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">$700</p>
+                                    <a href="">
+                                        <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-------repas 2------------>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./image/img5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span
+                                            class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                        <span class="fa-regular fa-heart"></span>
+                                    </div>
+
+                                    <h5 class="card-title">Caviar d'aubergine</h5>
+                                    <p class="card-text text-secondary">La salade traditionnelle avec du fromage et pain
+                                        frit. Fait MaisonIngrédients : Salade,..</p>
+
+                                    <p>
+                                        <span class="text-warning">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span class="text-warning">5.0</span>
+                                        <span>(16,500)</span>
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">$700</p>
+                                    <a href="">
+                                        <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./image/img7.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span
+                                            class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                        <span class="fa-regular fa-heart"></span>
+                                    </div>
+
+                                    <h5 class="card-title">Fattouche</h5>
+                                    <p class="card-text text-secondary ">This is a wider card with supporting text below
+                                        as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+
+                                    <p>
+                                        <span class="text-warning">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span class="text-warning">5.0</span>
+                                        <span>(16,500)</span>
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">$700</p>
+                                    <a href="">
+                                        <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="texte">
+                    <h1 class="fw-bold taille mb-5"><span class="texte-warning">Ambiance Générale</span> la famille
+                        en joie</h1>
+                    <p class="text-secondary h5 mb-5">L'intérieur du restaurant évoque une atmosphère chaleureuse et
+                        accueillante. Les murs sont peints dans des teintes douces, créant une sensation de confort. Un
+                        éclairage tamisé, provenant de lampes suspendues en bois, ajoute une touche de chaleur et de
+                        convivialité..
+                    </p>
+                </div>
+                <section class="container" id="apropos">
+                    <div class="row mb-5">
+                        <div class="col-lg-6 ">
+                            <img src="./image/salle3.jpg" class="img-fluid rounded-4 shadow-lg shadow-sm" alt="images">
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="./image/salle4.jpg" class="img-fluid rounded-4 shadow-lg shadow-sm salle"
+                                alt="images">
+
+                        </div>
+                    </div>
+                </section>
+                <!----------section presentation de che cuisinier------------>
+                <section class="container d-flex mb-5 chef me-5 text-align-centers " id="nos cuisinié">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./image/chef1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">Chef amokape kaona</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./image/chef2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">Chef jonathan ave</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="./image/chef3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">Chef venus kanon</p>
+                        </div>
+                    </div>
+                </section>
+                <!---------------------section fruit----------------->
+                <section class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-6 ">
+                            <img src="./image/img.jpg " class="img-fluid rounded-4 shadow-lg shadow-sm" alt="images">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="texte">
+                                <h1 class="fw-bold taille mb-4 text-warning">MANGEZ FRUITÉ</h1>
+                                <p class="text-secondary h5 mb-4">Le bonnheur se trouve dans un repas partagé en famille
+                                    avec la joie et l'ambiance accaompagé. Les ingrédients de base, tels que le maïs, le
+                                    millet et les légumineuses, sont
+                                    souvent au cœur des plats emblématiques comme le Jollof Rice ou le Tagine. Ces mets
+                                    sont non
+                                    seulement des sources de nutrition, mais ils favorisent également un esprit
+                                    communautaire,
+                                    rendant chaque repas une occasion de partage et de convivialité.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./image/imgd3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                    <span class="fa-regular fa-heart"></span>
+                                </div>
+
+                                <h5 class="card-title"> Assortiment idéal pour 2 personnes</h5>
+                                <p class="card-text text-secondary">Si vous avez envie de goûter un assortiment qui
+                                    représente bien la cuisine libanaise et syrienne fait...</p>
+                                <p>
+                                    <span class="text-warning">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="text-warning">5.0</span>
+                                    <span>(16,500)</span>
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <p class="fw-bold">$700</p>
+                                <a href="">
+                                    <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------repas 2------------>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./image/imgd6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                    <span class="fa-regular fa-heart"></span>
+                                </div>
+
+                                <h5 class="card-title">Caviar d'aubergine</h5>
+                                <p class="card-text text-secondary">La salade traditionnelle avec du fromage et pain
+                                    frit. Fait MaisonIngrédients : Salade,..</p>
+
+                                <p>
+                                    <span class="text-warning">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="text-warning">5.0</span>
+                                    <span>(16,500)</span>
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <p class="fw-bold">$700</p>
+                                <a href="">
+                                    <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./image/imgd8.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                    <span class="fa-regular fa-heart"></span>
+                                </div>
+
+                                <h5 class="card-title">Fattouche</h5>
+                                <p class="card-text text-secondary ">This is a wider card with supporting text below
+                                    as a natural
+                                    lead-in to additional content. This card has even longer content than the first
+                                    to show that equal height action.</p>
+
+                                <p>
+                                    <span class="text-warning">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="text-warning">5.0</span>
+                                    <span>(16,500)</span>
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <p class="fw-bold">$700</p>
+                                <a href="">
+                                    <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----------------------deuxiéme tableau de dessert------------>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./image/imgd1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                <span class="fa-regular fa-heart"></span>
+                            </div>
+
+                            <h5 class="card-title"> Assortiment idéal pour 2 personnes</h5>
+                            <p class="card-text text-secondary">Si vous avez envie de goûter un assortiment qui
+                                représente bien la cuisine libanaise et syrienne fait...</p>
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                                <span class="text-warning">5.0</span>
+                                <span>(16,500)</span>
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <p class="fw-bold">$700</p>
+                            <a href="">
+                                <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-------repas 2------------>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./image/imgd2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                <span class="fa-regular fa-heart"></span>
+                            </div>
+
+                            <h5 class="card-title">Caviar d'aubergine</h5>
+                            <p class="card-text text-secondary">La salade traditionnelle avec du fromage et pain
+                                frit. Fait MaisonIngrédients : Salade,..</p>
+
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                                <span class="text-warning">5.0</span>
+                                <span>(16,500)</span>
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <p class="fw-bold">$700</p>
+                            <a href="">
+                                <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./image/imgd7.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="bg-secondary text-white rounded-2 p-1"><small>Delicious</small></span>
+                                <span class="fa-regular fa-heart"></span>
+                            </div>
+
+                            <h5 class="card-title">Fattouche</h5>
+                            <p class="card-text text-secondary ">This is a wider card with supporting text below
+                                as a natural
+                                lead-in to additional content. This card has even longer content than the first
+                                to show that equal height action.</p>
+
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                                <span class="text-warning">5.0</span>
+                                <span>(16,500)</span>
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <p class="fw-bold">$700</p>
+                            <a href="">
+                                <p><i class="fa fa-shopping-cart"></i>Commandé</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!--------section footer---------------->
+<footer class="footer  ">
+    <div class="footer_content ">
+        <div class="footer_section ">
+            <h3>À propos</h3>
+            <p>Découvrez plus sur notre entreprise, notre mission et nos valeurs.</p>
+            <a href="#" class="btn btn-warning">En savoir plus</a>
+        </div>
+        <div class="footer_section ">
+            <h3>Contact</h3>
+            <p>15/B, Abidjan, Côte d'Ivoire</p>
+            <p>Email: info@webmail.com</p>
+            <p>Téléphone: +225 456 7890</p>
+        </div>
+        <div class="footer_section ">
+            <h3>Suivez-nous</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+</footer>
+
+        <!-------------lien pour le javasript--------->
+        <script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
