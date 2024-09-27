@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ma page restovoyage</title>
+
+    <!------------lien pour les font family------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-----------------lien pour les icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-------------lien pour le bootstrap------------>
+    <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.css">
+    <!------------lien pour le style.css------------->
+    <link rel="stylesheet" href="./css/style1.css">
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg nav mb-5">
+        <div class="container-fluid">
+
+            <div class="nav-brand d-flex align-items-center">
+                <a class="logo" href="#">
+                    <img src="./image/logov1.png" class="img-fluid" width="100" alt="logo">
+                </a>
+                <ul class="list">
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-dark btn-sm dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="fa fa-bars"></span> Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#nos destination">Nos destination</a></li>
+                            <li><a class="dropdown-item" href="#tourisme">Tourisme</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#chef cuisinié">Nos agences</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <button class=" btn btn-outline-dark navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apropos">A propos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Nos services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Plats Africain</a></li>
+                            <li><a class="dropdown-item" href="#">Plats Europeen</a></li>
+                            <li><a class="dropdown-item" href="#variété">Tout variété</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                   
+                    <button class="btn btn-dark" type="submit">Contactez nous</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!---------section hero--------------->
+    <section class="hero mb-5">
+        <div class="over-lay">
+            <div class="hero-text mx- px-">
+                <h1>LEOVOYAGE AFRIQUE..</h1>
+                <h2>vivez de magifique vaccances</h2>
+                <a href="#about" class="btn btn-warning">En savoir plus </a>
+            </div>
+        </div>
+    </section>
+    <!------------section aprés baniere---------------->
+    <section class="container" id="apropos">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="texte">
+                    <h1 class="fw-bold taille mb-4"><span class="texte-bleu">LEOVOYAGE AFRIQUE</span> une destination de rêve.</h1>
+                    <p class="text-secondary h5 mb-4">Bienvenue à Leovoayge Afrique, un lieu où la passion pour la gastronomie rencontre l'authenticité des saveurs africaines. Situé au cœur de [Ville ou quartier], notre restaurant célèbre la richesse et la diversité de la cuisine africaine, en mettant à l'honneur des plats traditionnels revisités avec une touche.
+                        Chez Mangé africain, chaque plat est une invitation au voyage culinaire, inspiré par les recettes ancestrales et les ingrédients typiques des différentes régions du continent africain. 
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="./image/imgv1.png" class="img-fluid rounded-4 shadow-lg shadow-sm" alt="images">
+            </div>
+        </div>
+    </section>
+    <!------------la barre d'info-------------->
+    <section class="mb-5">
+        <div class=" icones">
+            <div class="row d-flex mx-5 px-5 text-align align-items-center ">
+                <div class="col-md-4">
+                    <div class="text">
+                        <i class="fa fa-truck fs-2 icone mb-2"></i>
+                        <h4>Billet gratuit</h4>
+                        <p class="text-secondary">offerte pour une famille de plus de 4</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text">
+                        <i class="fa fa-phone-volume fs-2 icone mb-2"></i>
+                        <h4>Assitance 24h/24 et 7j/7</h4>
+                        <p class="text-secondary ">Béneficiez d'un soutien tout la journée</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text">
+                        <i class="fa fa-arrows-rotate fs-2 icone mb-2"></i>
+                        <h3>Remboursement</h3>
+                        <p class="text-secondary ">Obtenez un remboursement dans les 3 jours!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------section le texte avant la barre tabs-------------->
+    <section id="nos plats">
+        <div class="mx-5 px-5 mb-5 ">
+            <h2 class="fw-bold fs-1 mb-5"><span class="texte-bleu">DESTINATION FAVORIS</span> </h2>
+            <p class=" text-secondary fs-4 ">Merci de nous rendre visite, et nous avons hâte de vous accueillir chez Leovoayge Afrique,
+                où chaque voyage est une aventure .</p>
+        </div>
+    </section>
+
+    <!-----------menu des diferents plats------------->
+    <section class="mb-5">
+        <div class="container">
+            <!--Tabulation pour filtrer nos plats c'est à dire n'afficher le service que si on clique sur le menu approprier -->
+            <div class="mb-4">
+                <ul class="nav nav-underline bg-secondary rounded-2 text-center py-3 text-white">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-white active" aria-current="page" href="#" data-bs-toggle="tab"
+                            data-bs-target="#nav-tourisme" type="button" role="tab" aria-controls="nav-tourisme"
+                            aria-selected="true">Tourisme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#" data-bs-toggle="tab"
+                            data-bs-target="#nav-hotel" type="button" role="tab" aria-controls="nav-hotel"
+                            aria-selected="true">Hotel</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link text-white" aria-current="page" href="#" data-bs-toggle="tab"
+                        data-bs-target="#nav-restaurant" type="button" role="tab" aria-controls="nav-restaurant"
+                        aria-selected="true">Restaurant</a>
+                    </li>
+                </ul>
+            </div>
+
+    <!--Pour afficher les services après cliques sur les menu -->
+    <div class="tab-content" id="myTabContent pt-3">
+
+        <!--Ligne de chaque services groupé -->
+
+        <!--Services variété-------- -->
+        <div class="tab-pane fade show active" id="nav-tourisme" role="tabpanel" aria-labelledby="nav-tourisme"
+            tabindex="0" id="tourisme">
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./image/imga2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span
+                                    class=" text-secondary rounded-2 p-1 alert alert-warning"><small>Delicious</small></span>
+                                <span class="fa-regular fa-heart"></span>
+                            </div>
+
+                            <h5 class="card-title"> Destination ibiza</h5>
+                            <p class="card-text text-secondary">Si vous avez envie de goûter un assortiment qui
+                                représente bien la cuisine libanaise et syrienne fait...</p>
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                                <span class="text-warning">5.0</span>
+                                <span>(16,500)</span>
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <p class="fw-bold">$700</p>
+                            <a href="">
+                                <p><i class="fa fa-shopping-cart"></i>Reservation</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-------repas 2------------>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./image/imga4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span
+                                    class=" text-secondary rounded-2 p-1 alert alert-info"><small>Delicious</small></span>
+                                <span class="fa-regular fa-heart"></span>
+                            </div>
+
+                            <h5 class="card-title">En famille</h5>
+                            <p class="card-text text-secondary">La salade traditionnelle avec du fromage et pain
+                                frit. Fait MaisonIngrédients : Salade,..</p>
+
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                                <span class="text-warning">5.0</span>
+                                <span>(16,500)</span>
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <p class="fw-bold">$700</p>
+                            <a href="">
+                                <p><i class="fa fa-shopping-cart"></i>Reservation</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./image/imgv8.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span
+                                    class="text-secondary rounded-2 p-1 alert alert-info"><small>Delicious</small></span>
+                                <span class="fa-regular fa-heart"></span>
+                            </div>
+
+                            <h5 class="card-title">Voyages en amoureux</h5>
+                            <p class="card-text text-secondary ">This is a wider card with supporting text below
+                                as a natural
+                                lead-in to additional content. This card has even longer content than the first
+                                to show that equal height action.</p>
+
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                                <span class="text-warning">5.0</span>
+                                <span>(16,500)</span>
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <p class="fw-bold">600k</p>
+                            <a href="">
+                                <p><i class="fa fa-shopping-cart"></i>Reservation</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!--------------texte--------------->
+         <div class="texte">
+            <h1 class="fw-bold taille mb-5"><span class="texte-warning">Ambiance Générale</span> la famille
+                en joie</h1>
+            <p class="text-secondary h5 mb-5">Thème sur les Compagnies de Voyages
+                Introduction
+                Les compagnies de voyages jouent un rôle essentiel dans la facilitation des déplacements et des vacances. Elles offrent une variété de services allant de la réservation de billets d'avion à l'organisation de circuits touristiques......       </p>
+        </div>
+        <section class="container" id="apropos">
+            <div class="row mb-5">
+                <div class="col-lg-6 ">
+                    <img src="./image/imgv2.jpeg" class="img-fluid rounded-4 shadow-lg shadow-sm" alt="images">
+                </div>
+                <div class="col-lg-6">
+                    <img src="./image/imga3.jpg" class="img-fluid rounded-4 shadow-lg shadow-sm salle"
+                        alt="images">
+
+                </div>
+            </div>
+        </section>
+
+         <!----------section presentation de che cuisinier------------>
+         <section class="container d-flex mb-5 chef me-5 text-align-centers " id="nos cuisinié">
+            <div class="card" style="width: 18rem;">
+                <img src="./image/imgv4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text fw-bold">compagnie Dakar</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./image/imgv3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text fw-bold">compagnie allemagne </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./image/imge2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text fw-bold">compagnie france</p>
+                </div>
+            </div>
+        </section>
+
+         <!---------------------section fruit----------------->
+         <section class="container mb-5">
+            <div class="row">
+                <div class="col-lg-6 ">
+                    <img src="./image/img.avif " class="img-fluid rounded-4 shadow-lg shadow-sm" alt="images">
+                </div>
+                <div class="col-lg-6">
+                    <div class="texte">
+                        <h1 class="fw-bold taille mb-4 text-warning">Destination inconnu</h1>
+                        <p class="text-secondary h5 mb-4">Le bonnheur se trouve dans un repas partagé en famille
+                            avec la joie et l'ambiance accaompagé. Les ingrédients de base, tels que le maïs, le
+                            millet et les légumineuses, sont
+                            souvent au cœur des plats emblématiques comme le Jollof Rice ou le Tagine. Ces mets
+                            sont non
+                            seulement des sources de nutrition, mais ils favorisent également un esprit
+                            communautaire,
+                            rendant chaque repas une occasion de partage et de convivialité.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+              <!--------section footer---------------->
+              <footer class="bg-body-tertiary text-center">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                  <!-- Section: Social media -->
+                  <section class="mb-4">
+                    <!-- Facebook -->
+                    <a
+                    data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #3b5998;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+              
+                    <!-- Twitter -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #55acee;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+              
+                    <!-- Google -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #dd4b39;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-google"></i
+                    ></a>
+              
+                    <!-- Instagram -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #ac2bac;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+              
+                    <!-- Linkedin -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #0082ca;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <!-- Github -->
+                    <a
+                      data-mdb-ripple-init
+                      class="btn text-white btn-floating m-1"
+                      style="background-color: #333333;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </section>
+                  <!-- Section: Social media -->
+                </div>
+                <!-- Grid container -->
+              
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                  © 2020 Copyright:
+                  <a class="text-body" href="#">mon Entreprise.comm</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
+         <!-------------lien pour le javasript--------->
+         <script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+    </body>
+    
+    </html>
